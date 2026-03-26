@@ -1,12 +1,13 @@
-# Weather-Aware Delivery Delay System (n8n)
+#  Weather-Aware Delivery Delay System (n8n)
 
-## Project Overview
+##  Project Overview
 
 This project automates delivery status updates based on real-time weather conditions using the OpenWeatherMap API.
 It processes customer orders, checks weather for each city, and flags potential delivery delays.
 
+---
 
-##  Features
+## Features
 
 * Parallel processing of orders using Split Out node
 * Real-time weather data using OpenWeatherMap API
@@ -15,13 +16,15 @@ It processes customer orders, checks weather for each city, and flags potential 
 * Error handling for invalid cities
 * Secure API usage
 
+---
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 * n8n (Workflow Automation)
 * OpenWeatherMap API
 * JSON
 
+---
 
 ## Workflow Logic
 
@@ -36,8 +39,9 @@ It processes customer orders, checks weather for each city, and flags potential 
    * **Error** → invalid city
 6. Generate personalized customer message
 
+---
 
-##  Sample Output
+## Sample Output
 
 ```json
 {
@@ -47,27 +51,23 @@ It processes customer orders, checks weather for each city, and flags potential 
   "status": "On Time",
   "message": "Hi Alice Smith, your order to New York is on time."
 }
-'''
+```
+---
 
 ##  Setup Instructions
 
 1. Import the `workflow.json` into n8n
 2. Add your OpenWeatherMap API key
 3. Execute the workflow
-
 ---
-
-## Demo
-
+## 🎥 Demo
 (Attach your demo video link here)
 
 ## Key Learnings
-
 * API integration
 * Workflow automation using n8n
 * Error handling and resilience
 * Conditional logic implementation
-
+---
 ## Author
-
 Jnaneshwari N
